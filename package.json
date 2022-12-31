@@ -11,11 +11,11 @@
 		"build": "next build",
 		"start": "next start"
 	},
-	
 	"dependencies": {
 		"gsap": "^3.11.0",
 		"next": "^12.2.5",
 		"preact": "^10.10.6",
+		"preact-render-to-string": "^5.2.6",
 		"react": "npm:@preact/compat@^17.1.1",
 		"react-dom": "npm:@preact/compat@^17.1.1",
 		"react-timeago": "^7.1.0"
