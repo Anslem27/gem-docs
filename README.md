@@ -2,7 +2,7 @@
 
 #### This is where all gem releases, and documentation of the app is done.
 
-Built with [Next.js][nextjs], [Preact][preact], and [TailwindCSS][tailwindcss].
+Built with [Next.js][nextjs] and [TailwindCSS][tailwindcss].
 
 ```bash
 yarn
@@ -10,5 +10,6 @@ yarn dev
 ```
 
 [nextjs]: https://nextjs.org
-[preact]: https://preactjs.com
 [tailwindcss]: https://tailwindcss.com
+
+<!-- yarn add @chakra-ui/react @emotion/react @emotion/styled framer-motion-->

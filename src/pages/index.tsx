@@ -1,5 +1,6 @@
 /* eslint-disable react/no-multi-comp */
-import { faAnglesDown, faStar as fasStar, faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { Box, Heading, Text, Button } from '@chakra-ui/react';
+import { faAnglesDown, faStar, faDownload as fasStar, faUpRightFromSquare, faDownload } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
@@ -302,7 +303,7 @@ export default function Home({
 						<p>
 							v
 							{'0.0.0.beta'}
-							{` 29 MB`}
+							{` 29.37 MB`}
 						</p>
 
 						<p>
@@ -323,15 +324,20 @@ export default function Home({
 						<div>
 							{/* eslint-disable-next-line react/jsx-no-target-blank */}
 							<a
-								href="/"
+								href="https://github.com/Anslem27/gem-docs/releases/download/Betas/app-release.apk"
 								target="_blank"
 								rel="noopener"
 							>
-								<img
+								{/* <img
 									src="/img/google-play-store-badge-en.svg?v=1"
 									width="200"
 									alt="Soon Coming to the PlayStore"
-								/>
+								/> */}
+
+								<button href="">
+									<FontAwesomeIcon icon={faDownload} />
+									<span>Download beta Build</span>
+								</button>
 							</a>
 							<button onClick={scrollToAside}>
 								<FontAwesomeIcon icon={faAnglesDown} />
@@ -443,6 +449,7 @@ export default function Home({
 						</div>
 					)}
 				</Accordion>
+
 			</aside>
 		</>
 	);
