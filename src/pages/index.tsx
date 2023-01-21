@@ -5,10 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'preact/hooks';
-import Accordion from 'src/components/accordion';
 import DefaultHead from 'src/components/default-head';
 import ExternalLink from 'src/components/external-link';
-import { featuredReviews } from 'src/data/featured-reviews.list';
 import { introItemList } from 'src/data/intro-items.list';
 import { useTheme } from 'src/hooks/theme';
 import type { PlayStoreReview } from 'src/models/review_model';
@@ -420,35 +418,7 @@ export default function Home({
 				ref={asideRef}
 				className={styles.content}
 			>
-				<h1>Featured reviews from our Beta Testers</h1>
 
-				<p>
-					You&apos;ve read what we had to say about our app, but actual user reviews are far more important and clearly have a more vibrant tale to tell.
-					{' '}
-					You can also email us if you have a special feature request or bug fix here 👉
-					{' '}
-					<ExternalLink href="mailto:">anslembarn@gmail.com</ExternalLink>
-					{' '}
-				</p>
-
-				<Accordion
-					contentClassName="border-l bg-hover"
-					summaryClassName="border bg-hover hover:!bg-border"
-					summary="Featured tester reviews"
-					openByDefault
-				>
-					{featuredReviews.map(review =>
-						<div
-
-							className={styles.featuredReview}
-						>
-							<div>
-								<p>{review.author.name}</p>
-							</div>
-							<span>{review.content}</span>
-						</div>
-					)}
-				</Accordion>
 
 			</aside>
 		</>
